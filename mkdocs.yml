@@ -16,10 +16,23 @@ plugins:
 nav:
   - Home: index.md
   - About: about.md
-  - ADRs: adr/index.md
+  - ADRs:
+    - ADR Index: adr/index.md
+    - ADR-0001 First: adr/0001-first.md
+    - ADR-0002 Second: adr/0002-second.md
+    - ADR-0003 Third: adr/0003-third.md
+    - ADR-0004 Fourth: adr/0004-fourth.md
+    - ADR-0005 Fifth: adr/0005-fifth.md
+  - RFCs:
+    - RFC Index: rfc/index.md
+    - RFC-0001: rfc/0001-first.md
+    - RFC-0002: rfc/0002-second.md
+    - RFC-0003: rfc/0003-third.md
 
 # ADR Extension Configuration
 markdown_extensions:
+  - toc:
+      permalink: "#"
   - pymdownx.superfences:
       custom_fences:
       - name: mermaid

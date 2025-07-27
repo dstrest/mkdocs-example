@@ -1,10 +1,10 @@
 ---
-    title: 0002 Second
+    title: Second
     adr:
         author: Shawn Michaels
-        created: 27-July-2025
-        status:  draft | proposed | rejected | accepted | superseded
-        superseded_by: 0001-first
+        created: 27-Jul-2025
+        status: superseded
+        superseded_by: 0004-fourth
         extends:
             - 0001-first
 ---

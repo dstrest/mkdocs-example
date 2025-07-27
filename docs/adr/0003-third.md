@@ -1,10 +1,9 @@
 ---
-    title: First
+    title: Some ADR
     adr:
         author: Shawn Michaels
         created: 27-Jul-2025
-        status: superseded
-        superseded_by: 0002-second
+        status:  rejected
 
 ---
 
