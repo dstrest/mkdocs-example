@@ -1,4 +1,8 @@
 site_name: My Docs
-site_url: https://dstrest.github.io/mkdocs-example
+#site_url: https://dstrest.github.io/mkdocs-example
 theme:
   name: material
+
+nav:
+  - Home: index.md
+  - About: about.md
