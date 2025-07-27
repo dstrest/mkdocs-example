@@ -1,8 +1,27 @@
 site_name: My Docs
 #site_url: https://dstrest.github.io/mkdocs-example
 theme:
-  name: material
+  #name: material
+  name: mkdocs-material-adr
+
+  # Configuration for the material theme
+  features:
+    - navigation.instant
+
+plugins:
+  - mkdocs-material-adr/adr:
+      graph_file: adr/index.md # index file for the ADRs
+  - material/search # Note: all material plugin should be namespaced for them to work
 
 nav:
   - Home: index.md
   - About: about.md
+  - ADRs: adr/index.md
+
+# ADR Extension Configuration
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
